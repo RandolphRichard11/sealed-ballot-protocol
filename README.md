@@ -2,6 +2,11 @@
 
 A decentralized voting system using Fully Homomorphic Encryption (FHE) where votes remain encrypted until a predetermined deadline. Built with Zama FHEVM, this system ensures complete privacy and prevents result manipulation during the voting period.
 
+## 🔗 Links
+
+- **Live Demo**: [https://sealedvote.vercel.app/](https://sealedvote.vercel.app/)
+- **Demo Video**: [sealed-vote.mp4](sealed-vote.mp4)
+
 ## Features
 
 - **Encrypted Voting**: All votes are encrypted using FHE technology
