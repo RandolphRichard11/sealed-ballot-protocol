@@ -323,7 +323,7 @@ sealed-ballot/
 - **RPC URL**: https://1rpc.io/sepolia
 - **Contract**: `0xBca9B8390Cdf0c0F1Da18d9523f78F8bFfd9aEc1`
 - **Deployer**: `0x32d8b6f8a1a7C9656069D1E6d349740768c49fa4`
-- **Etherscan**: https://sepolia.etherscan.io/address/0xBca9B8390Cdf0c0F1Da18d9523f78F8bFfd9aEc1
+- **Etherscan**: https://sepolia.etherscan.io/
 
 ## Testing
 
