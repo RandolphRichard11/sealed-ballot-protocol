@@ -26,7 +26,7 @@ export const config = getDefaultConfig({
   chains: [localhost, sepolia],
   transports: {
     [localhost.id]: http("http://127.0.0.1:8545"),
-    [sepolia.id]: http(`https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990`),
+    [sepolia.id]: http("https://1rpc.io/sepolia"),
   },
   ssr: false,
 });

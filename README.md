@@ -150,8 +150,8 @@ The deployed contract address is automatically configured in `frontend/src/confi
    - Currency Symbol: ETH
 
 2. Import Test Account:
-   - Use this private key: `0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80`
-   - This account has 10000 ETH on local network
+   - Use the first Hardhat account’s private key (see Hardhat node output)
+   - Each test account has 10000 ETH on the local network
 
 **More Test Accounts:**
 
@@ -183,7 +183,7 @@ export const CONTRACT_ADDRESS = LOCALHOST_ADDRESS;
 ```
 
 **Network Configuration:**
-- Sepolia RPC: `https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990`
+- Sepolia RPC: `https://1rpc.io/sepolia`
 - Localhost RPC: `http://127.0.0.1:8545`
 
 ### 6. Run Frontend
@@ -316,12 +316,11 @@ sealed-ballot/
 - **RPC URL**: http://127.0.0.1:8545
 - **Contract**: `0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512`
 - **Deployer**: `0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266`
-- **Accounts**: 10 pre-funded accounts with 10000 ETH each
-- **Test Private Key**: `0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80`
+- **Accounts**: 10 pre-funded accounts with 10000 ETH each (private keys shown in Hardhat node output)
 
 ### Sepolia Testnet (✅ Deployed)
 - **Chain ID**: 11155111
-- **RPC URL**: https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990
+- **RPC URL**: https://1rpc.io/sepolia
 - **Contract**: `0xBca9B8390Cdf0c0F1Da18d9523f78F8bFfd9aEc1`
 - **Deployer**: `0x32d8b6f8a1a7C9656069D1E6d349740768c49fa4`
 - **Etherscan**: https://sepolia.etherscan.io/address/0xBca9B8390Cdf0c0F1Da18d9523f78F8bFfd9aEc1

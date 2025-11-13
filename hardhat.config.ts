@@ -17,15 +17,14 @@ import "./tasks/TimeLockedVote";
 // Default mnemonic for local development (DO NOT use in production)
 const MNEMONIC: string = vars.get("MNEMONIC", "test test test test test test test test test test test junk");
 
-// Private key for testnet deployment
-const PRIVATE_KEY: string = vars.get("PRIVATE_KEY", "19a114f77fdec0716a11983df1d40908fc377bedcc64d0eb1ce4ec3e1db7ce93");
+// Private key for testnet deployment (set via `npx hardhat vars set PRIVATE_KEY`)
+const PRIVATE_KEY: string = vars.get("PRIVATE_KEY", "");
 
-// Infura API key for testnet
-const INFURA_API_KEY: string = vars.get("INFURA_API_KEY", "b18fb7e6ca7045ac83c41157ab93f990");
-
-// Default account for local hardhat node (first account from default mnemonic)
-// This account will have 10000 ETH on local network
-const LOCAL_PRIVATE_KEY = "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
+// RPC configuration for Sepolia (set via `npx hardhat vars set SEPOLIA_RPC_URL`)
+const INFURA_API_KEY: string = vars.get("INFURA_API_KEY", "");
+const SEPOLIA_RPC_URL: string =
+  INFURA_API_KEY !== "" ? `https://sepolia.infura.io/v3/${INFURA_API_KEY}` : vars.get("SEPOLIA_RPC_URL", "https://1rpc.io/sepolia");
+const SEPOLIA_ACCOUNTS = PRIVATE_KEY !== "" ? [PRIVATE_KEY] : [];
 
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
@@ -60,9 +59,9 @@ const config: HardhatUserConfig = {
       url: "http://127.0.0.1:8545",
     },
     sepolia: {
-      accounts: [PRIVATE_KEY],
+      accounts: SEPOLIA_ACCOUNTS,
       chainId: 11155111,
-      url: `https://sepolia.infura.io/v3/${INFURA_API_KEY}`,
+      url: SEPOLIA_RPC_URL,
     },
   },
   paths: {

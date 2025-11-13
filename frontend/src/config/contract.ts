@@ -18,7 +18,7 @@ export const NETWORK_CONFIG = {
   sepolia: {
     chainId: 11155111,
     name: "Sepolia",
-    rpcUrl: "https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990",
+    rpcUrl: "https://1rpc.io/sepolia",
   },
 };
 
