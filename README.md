@@ -4,7 +4,7 @@ A decentralized voting system using Fully Homomorphic Encryption (FHE) where vot
 
 ## 🔗 Links
 
-- **Live Demo**: [https://sealedvote.vercel.app/](https://sealedvote.vercel.app/)
+- **Live Demo**: [https://sealed-ballot-protocol-ktesl.vercel.app/](https://sealed-ballot-protocol-ktesl.vercel.app/)
 - **Demo Video**: [sealed-vote.mp4](sealed-vote.mp4)
 
 ## Features
